@@ -1,18 +1,19 @@
 # NOVALUME - NIGHT SKY FROM AN EXOPLANET
 
-# ABOUT
 
-There are over 5500 confirmed and over 10,000 candidate exoplanets according to NASA. This application imagines the night sky from four of the confirmed exoplanets: Kepler-186f, Kepler-452b, Proxima Centauri b and CoRot-7b.
+## ABOUT
 
-# USAGE
+There are over 5500 confirmed and thousands more candidate exoplanets according to NASA. The sky will look different from each exoplanet as the view will depend on the properties of its host star(s).This application imagines the night sky from four of the confirmed exoplanets: Kepler-186f, Kepler-452b, Proxima Centauri b and CoRot-7b. The app has three (3) complexity levels: beginner, intermediate and advanced. The higher the complexity level, the more data is shown to the user. 
 
-There are three (3) different complexity levels: beginner, intermediate and advanced. The higher the complexity, the more data is shown to the user.
-
-Different exoplanets will have different host stars and in some cases multiple host stars with varying properties. These will affect the amount of stars that are seen from the exoplanet.
+Users will be able to trace their very own constellations, name them and download them as a .png file.
 
 
-# DOCUMENTATION
+## USAGE
 
-- Gaia
-- NASA
+
+
+
+## DOCUMENTATION
+
+[NASA](https://science.nasa.gov/exoplanets/big-questions/)
 
