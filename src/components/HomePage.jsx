@@ -19,19 +19,6 @@ function Home() {
     navigate('/StarMap', {
       state: { exoplanet, difficulty }
     })
-
-    //for post to backend
-    //const data = {exoplanet, difficulty}
-
-    // try {
-    //   // Send POST request to Flask backend
-    //   const response = await axios.post('http://localhost:5000/process', data);
-    //   console.log(response.data);
-
-    //   navigate('/StarMap');
-    // } catch (error) {
-    //   console.error('Error sending data to backend:', error);
-    // }
   
 }
 return (
@@ -62,7 +49,6 @@ return (
                 <option value="Beginner">Beginner</option>
                 <option value="Intermediate">Intermediate</option>
                 <option value="Advanced">Advanced</option>
-                <option value="Expert">Expert</option>
               </Form.Control>
             </div>
           </Form.Group>

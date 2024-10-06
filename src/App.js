@@ -11,8 +11,8 @@ function App() {
       <Routes>
         <Route path='/' Component={HomePage}/>
         <Route path='/StarMap' Component={StarMap}/>
-        {/* <Route path='/About' Component={About}/> */}
-        {/* <Route path='/Privacy' Component={Privacy}/> */}
+        <Route path='/About' Component={About}/>
+        <Route path='/Privacy' Component={Privacy}/>
       </Routes>
     </Router>
     
