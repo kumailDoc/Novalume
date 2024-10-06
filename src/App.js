@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' Component={HomePage}/>
-        <Route path='/StarMap' Component={StarMap}/>
+        <Route path="/StarMap" element={<StarMap />} />
         <Route path='/About' Component={About}/>
         <Route path='/Privacy' Component={Privacy}/>
       </Routes>
