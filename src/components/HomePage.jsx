@@ -7,7 +7,7 @@ import './Home.css'
 
 function Home() {
   const [exoplanet, setExoplanet] = useState()
-  const [difficulty, setDifficulty] = useState()
+  const [complexity, setComplexity] = useState()
   const navigate = useNavigate()
 
   const handleSelection = (setter) => (e) => {
@@ -17,21 +17,9 @@ function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate('/StarMap', {
-      state: { exoplanet, difficulty }
+      state: { exoplanet, complexity }
     })
 
-    //for post to backend
-    //const data = {exoplanet, difficulty}
-
-    // try {
-    //   // Send POST request to Flask backend
-    //   const response = await axios.post('http://localhost:5000/process', data);
-    //   console.log(response.data);
-
-    //   navigate('/StarMap');
-    // } catch (error) {
-    //   console.error('Error sending data to backend:', error);
-    // }
   
 }
 return (
@@ -41,10 +29,10 @@ return (
         <Form onSubmit={handleSubmit} >
           <h1>Novalume</h1>
           <h2>The universe from a different prespective!</h2>
-          <h3 className="description">Select an exoplanet and the difficulty to generate map.</h3>
+          <h3 className="description">Select an exoplanet and the complexity to generate map.</h3>
           <Form.Group className="form-group">
             <div className="inner-group">
-              <Form.Label>Difficulty Level</Form.Label>
+              <Form.Label>Complexity Level</Form.Label>
               <Form.Control as="select" value={exoplanet} onChange={handleSelection(setExoplanet)}>
                 <option value="">Choose an Option</option>
                 <option value="Kepler-186f">Kepler-186f</option>
@@ -57,10 +45,10 @@ return (
           <Form.Group className="form-group">
             <div className="inner-group">
               <Form.Label>Exoplanet</Form.Label>
-              <Form.Control as="select" value={difficulty} onChange={handleSelection(setDifficulty)}>
+              <Form.Control as="select" value={complexity} onChange={handleSelection(setComplexity)}>
                 <option value="">Choose an Option</option>
                 <option value="Beginner">Beginner</option>
-                <option value="Intermediate">ntermediate</option>
+                <option value="Intermediate">Intermediate</option>
                 <option value="Advanced">Advanced</option>
                 <option value="Expert">Expert</option>
               </Form.Control>
