@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom'; // Import useLocation
+import { Link } from 'react-router-dom'
 import * as d3 from "d3";
 import './StarMap.css';
 
@@ -177,6 +178,7 @@ const StarMap = () => {
         <button className="submit-btn" onClick={() => generateRandomDots(stars)} style={{ marginBottom: "10px" }}>
           New Perspective
         </button>
+        <Link className="home-btn" to="/">Home</Link>
         <StarMapDownloader svgRef={svgRef} constellationName={constellationName} />
         <svg
           ref={svgRef}
