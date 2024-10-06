@@ -79,3 +79,9 @@ label {
 .submit-btn:hover {
     background-color: #095fbc; 
 }
+
+.Home{
+    background-image: url("./../../public/images/jameswebb.jpg");
+    background-size: cover;
+    background-position: center;
+}

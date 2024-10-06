@@ -61,7 +61,7 @@ const StarMapDownloader = ({ svgRef, constellationName }) => {
   };
 
   return (
-    <button onClick={downloadStarMap} style={{ marginBottom: "10px" }}>
+    <button className="submit-btn" onClick={downloadStarMap} style={{ marginBottom: "10px" }}>
       Download Star Map
     </button>
   );
@@ -70,18 +70,18 @@ const StarMapDownloader = ({ svgRef, constellationName }) => {
 const StarMap = () => {
   const location = useLocation();
   console.log(location.state); // Log state to check if it's coming through
-  const { exoplanet = "No exoplanet selected", difficulty = "No difficulty selected" } = location.state || {}; // Use fallback values if state is undefined
+  const { exoplanet = "No exoplanet selected", difficulty = "No complexity selected" } = location.state || {}; // Use fallback values if state is undefined
 
   const [dots, setDots] = useState([]);
   const [clickedDots, setClickedDots] = useState([]);
   const [constellationName, setConstellationName] = useState("");
   const svgRef = useRef(null);
-  const stars = 300;
+  const stars = 1500;
 
   // Generates random dots and clears lines
   const generateRandomDots = (numDots) => {
-    const width = 500;
-    const height = 500;
+    const width = 1000;
+    const height = 800;
     const newDots = [];
 
     // Clear all lines when generating new dots
@@ -140,7 +140,7 @@ const StarMap = () => {
       .append("circle")
       .attr("cx", (d) => d.x)
       .attr("cy", (d) => d.y)
-      .attr("r", () => Math.random() * 3 + 1)
+      .attr("r", () => Math.random())
       .attr("fill", "#FFF4CE")
       .style("opacity", () => Math.random() * 0.7 + 0.3)
       .style("cursor", "pointer")
@@ -167,21 +167,21 @@ const StarMap = () => {
 
   return (
     <div className="container">
-      {/* Display the exoplanet and difficulty */}
+      {/* Display the exoplanet and Complexity */}
       <h3>Exoplanet: {exoplanet}</h3>
-      <h3>Difficulty: {difficulty}</h3>
+      <h3>Complexity: {difficulty}</h3>
 
       <ConstellationNameInput setConstellationName={setConstellationName} />
-      <h3>Constellation Name: {constellationName || "Untitled"}</h3>
+      <h3>Constellation Name: {constellationName || ""}</h3>
       <div>
-        <button onClick={() => generateRandomDots(stars)} style={{ marginBottom: "10px" }}>
+        <button className="submit-btn" onClick={() => generateRandomDots(stars)} style={{ marginBottom: "10px" }}>
           New Perspective
         </button>
         <StarMapDownloader svgRef={svgRef} constellationName={constellationName} />
         <svg
           ref={svgRef}
-          width={500}
-          height={500}
+          width={1000}
+          height={800}
           style={{
             background: "black",
             border: "1px solid #ccc",

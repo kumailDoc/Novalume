@@ -44,7 +44,7 @@ return (
           <h3 className="description">Select an exoplanet and the difficulty to generate map.</h3>
           <Form.Group className="form-group">
             <div className="inner-group">
-              <Form.Label>Exoplanet</Form.Label>
+              <Form.Label>Difficulty Level</Form.Label>
               <Form.Control as="select" value={exoplanet} onChange={handleSelection(setExoplanet)}>
                 <option value="">Choose an Option</option>
                 <option value="Kepler-186f">Kepler-186f</option>
@@ -56,13 +56,12 @@ return (
           </Form.Group>
           <Form.Group className="form-group">
             <div className="inner-group">
-              <Form.Label>Difficulty</Form.Label>
+              <Form.Label>Exoplanet</Form.Label>
               <Form.Control as="select" value={difficulty} onChange={handleSelection(setDifficulty)}>
                 <option value="">Choose an Option</option>
                 <option value="Beginner">Beginner</option>
                 <option value="Intermediate">Intermediate</option>
                 <option value="Advanced">Advanced</option>
-                <option value="Expert">Expert</option>
               </Form.Control>
             </div>
           </Form.Group>
