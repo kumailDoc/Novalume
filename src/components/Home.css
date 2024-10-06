@@ -3,6 +3,9 @@ body{
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
+.home {
+    background-image: url("background.jpg")
+}
 
 h1, h2{
     color: rgb(57, 29, 166);
