@@ -7,6 +7,10 @@ There are over 5500 confirmed and thousands more candidate exoplanets according 
 
 Users will be able to trace their very own constellations, name them and download them as a .png file.
 
+<img width="871" alt="Screenshot 2024-10-06 at 1 46 18 PM" src="https://github.com/user-attachments/assets/4c242b8f-5930-41da-921e-51de809d6895">
+
+
+
 
 ## USAGE
 
