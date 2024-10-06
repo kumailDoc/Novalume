@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+  }
+  
+  button {
+    margin: 10px;
+  }
+  
+  h3 {
+    color: white;
+    text-align: center;
+  }
+  
+  svg {
+    margin-top: 20px;
+    display: block;
+  }
+  
+  .submit-btn {
+    background-color: rgb(57, 29, 166); 
+    color: white;              
+    border: none;             
+    padding: 2% 3%;       
+    border-radius: 10px;       
+    cursor: pointer;           
+    width: 25%;    
+    margin-bottom: 3%;           
+}
+
+.submit-btn:hover {
+    background-color: #095fbc; 
+}
